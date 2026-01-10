@@ -1,0 +1,243 @@
+# encoding: utf-8
+# 2020 R2
+SetScriptVersion(Version="20.2.221")
+template1 = GetTemplate(TemplateName="Geometry")
+system1 = template1.CreateSystem()
+Save(Overwrite=True)
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsSpaceClaimGeometry=True)
+geometry1.Exit()
+geometry1.Edit()
+designPoint1 = Parameters.GetDesignPoint(Name="0")
+parameter1 = Parameters.GetParameter(Name="P2")
+designPoint1.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="27.375 [m]")
+Update()
+parameter2 = Parameters.GetParameter(Name="P1")
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="10 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="10.5 [m]")
+Update()
+parameter2.DisplayText = "ballast_D"
+Update()
+parameter3 = Parameters.GetParameter(Name="P3")
+designPoint1.SetParameterExpression(
+    Parameter=parameter3,
+    Expression="-15.5 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter3,
+    Expression="15.5 [m]")
+Update()
+parameter4 = Parameters.GetParameter(Name="P4")
+designPoint1.SetParameterExpression(
+    Parameter=parameter4,
+    Expression="65 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter4,
+    Expression="60 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter4,
+    Expression="65.25 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter4,
+    Expression="60 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter4,
+    Expression="65.25 [m]")
+Update()
+parameter5 = Parameters.GetParameter(Name="P5")
+designPoint1.SetParameterExpression(
+    Parameter=parameter5,
+    Expression="60 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter5,
+    Expression="65.25 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter5,
+    Expression="60 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter5,
+    Expression="70 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter5,
+    Expression="65.25 [m]")
+Update()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+parameter6 = Parameters.GetParameter(Name="P6")
+designPoint1.SetParameterExpression(
+    Parameter=parameter6,
+    Expression="123 [m]")
+designPoint1.SetParameterExpression(
+    Parameter=parameter6,
+    Expression="12 [m]")
+Update()
+ClearMessages()
+designPoint1.SetParameterExpression(
+    Parameter=parameter6,
+    Expression="10.5 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="15 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="10.5 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="8 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="10.5 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="8 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="10.5 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="8 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="10.5 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="9 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="10 [m]")
+Update()
+parameter7 = Parameters.GetParameter(Name="P14")
+designPoint1.SetParameterExpression(
+    Parameter=parameter7,
+    Expression="10.5 [m]")
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="10.5 [m]")
+Update()
+Save(Overwrite=True)
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="9 [m]")
+designPoint1.SetParameterExpression(
+    Parameter=parameter7,
+    Expression="9 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="10 [m]")
+designPoint1.SetParameterExpression(
+    Parameter=parameter7,
+    Expression="10 [m]")
+Update()
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="9 [m]")
+designPoint1.SetParameterExpression(
+    Parameter=parameter7,
+    Expression="9 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter7,
+    Expression="10.5 [m]")
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="10.5 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="9 [m]")
+designPoint1.SetParameterExpression(
+    Parameter=parameter7,
+    Expression="9 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="10.5 [m]")
+parameter8 = Parameters.GetParameter(Name="P14")
+designPoint1.SetParameterExpression(
+    Parameter=parameter8,
+    Expression="10.5 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="10 [m]")
+designPoint1.SetParameterExpression(
+    Parameter=parameter8,
+    Expression="10 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter8,
+    Expression="8 [m]")
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="8 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="10.5 [m]")
+designPoint1.SetParameterExpression(
+    Parameter=parameter8,
+    Expression="10.5 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="9 [m]")
+designPoint1.SetParameterExpression(
+    Parameter=parameter8,
+    Expression="9 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter8,
+    Expression="10.5 [m]")
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="10.5 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="9 [m]")
+designPoint1.SetParameterExpression(
+    Parameter=parameter8,
+    Expression="9 [m]")
+Update()
+Save(Overwrite=True)
+designPoint1.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="26 [m]")
+Update()
+Save(Overwrite=True)
+Save(Overwrite=True)
+geometry1.Exit()
+Save(Overwrite=True)

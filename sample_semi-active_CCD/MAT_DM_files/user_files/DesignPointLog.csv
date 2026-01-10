@@ -1,0 +1,36 @@
+﻿# 
+# This file contains the parameter values of the Design Points successfully updated by ANSYS Workbench.
+# Project name: DTU_DM
+# Creation date: 09/24/2022 21:05:50
+# 
+# 09/24/2022 21:05:50
+# The parameters defined in the project are:
+# ,P1 - ballast_D [m],P2 - ballast_L [m],P3 - ballst_Deep [m],P4 - ballast_deep [m],P5 - board_L [m],P6 - board_Wide [m],P7 - board_thickness [m],P8 - ballast_draft [m],P14 - ballast_D [m],P10 - upboard_thickness [m],P11 - tower_D [m],P12 - tower_h [m],P13 - tower_d [m]
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P1,P2,P3,P4,P5,P6,P7,P8,P14,P10,P11,P12,P13
+DP 0,9,26,15.5,-15.5,65.25,10.5,1.5,6,9,3,10.5,107,5.5
+# 
+# A non parametric change occurred and invalidated design point results.
+# 09/24/2022 22:20:31
+# 
+# 
+# A non parametric change occurred and invalidated design point results.
+# 09/25/2022 11:56:13
+# 
+# 
+# A non parametric change occurred and invalidated design point results.
+# 10/01/2022 11:30:55
+# 
+# 
+# A non parametric change occurred and invalidated design point results.
+# 10/04/2022 16:29:48
+# 
+# 
+# A non parametric change occurred and invalidated design point results.
+# 10/04/2022 17:52:54
+# 
+# 
+# A non parametric change occurred and invalidated design point results.
+# 10/06/2022 11:34:53
+# 

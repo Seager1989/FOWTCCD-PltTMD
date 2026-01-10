@@ -1,0 +1,17 @@
+# encoding: utf-8
+# 2023 R1
+SetScriptVersion(Version="23.1.153")
+template1 = GetTemplate(TemplateName="Geometry")
+system1 = GetSystem(Name="AQW")
+system2 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system1)
+system2.Delete()
+system3 = GetSystem(Name="Geom")
+geometry1 = system3.GetContainer(ComponentName="Geometry")
+geometry1.Edit()
+geometry1.Exit()
+string1 = geometry1.GetGeometryFileAndSaveData()
+setup1 = system1.GetContainer(ComponentName="Setup")
+setup1.Edit()
+Save(Overwrite=True)

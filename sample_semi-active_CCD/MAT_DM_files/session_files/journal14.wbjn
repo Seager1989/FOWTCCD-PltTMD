@@ -1,0 +1,27 @@
+# encoding: utf-8
+# 2020 R2
+SetScriptVersion(Version="20.2.221")
+system1 = GetSystem(Name="Geom")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+string1 = geometry1.GetGeometryFileAndSaveData()
+system2 = GetSystem(Name="AQW")
+setup1 = system2.GetContainer(ComponentName="Setup")
+setup1.Edit()
+Save(Overwrite=True)
+parameter1 = Parameters.GetParameter(Name="P19")
+parameter1.DisplayText = "v"
+parameter1.DisplayText = "Cable 1 Section 1: Length"
+parameter1.DisplayText = "Cable 2 Section 1: Length"
+parameter2 = Parameters.GetParameter(Name="P18")
+parameter2.DisplayText = "cable1_length"
+parameter2.DisplayText = "c"
+parameter2.DisplayText = "cable1_length"
+parameter1.DisplayText = "cable1_length"
+parameter1.DisplayText = "cable2_length"
+parameter3 = Parameters.GetParameter(Name="P20")
+parameter3.DisplayText = "cable1_length"
+parameter3.DisplayText = "cable3_length"
+parameter4 = Parameters.GetParameter(Name="P21")
+parameter4.DisplayText = "cable1_length"
+parameter4.DisplayText = "cable4_length"
+Save(Overwrite=True)

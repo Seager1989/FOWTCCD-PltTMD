@@ -1,0 +1,36 @@
+# encoding: utf-8
+# 2020 R2
+SetScriptVersion(Version="20.2.221")
+system1 = GetSystem(Name="Geom")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+string1 = geometry1.GetGeometryFileAndSaveData()
+system2 = GetSystem(Name="AQW")
+setup1 = system2.GetContainer(ComponentName="Setup")
+setup1.Edit()
+parameter1 = Parameters.GetParameter(Name="P22")
+parameter1.DisplayText = "Connection Point_1_Y "
+parameter2 = Parameters.GetParameter(Name="P23")
+parameter2.DisplayText = "Connection Point_1_Y "
+parameter2.DisplayText = "Connection Point_1_X "
+parameter3 = Parameters.GetParameter(Name="P24")
+parameter3.DisplayText = "Connection Point_1_Y "
+parameter3.DisplayText = "Connection Point_2_Y "
+parameter4 = Parameters.GetParameter(Name="P25")
+parameter4.DisplayText = "Connection Point_1_Y "
+parameter4.DisplayText = "Connection Point_2_X "
+parameter5 = Parameters.GetParameter(Name="P26")
+parameter5.DisplayText = "Connection Point_1_Y "
+parameter5.DisplayText = "Connection Point_3_Y "
+parameter6 = Parameters.GetParameter(Name="P27")
+parameter6.DisplayText = "Connection Point_1_Y "
+parameter6.DisplayText = "Connection Point_3_X "
+parameter7 = Parameters.GetParameter(Name="P28")
+parameter7.DisplayText = "Connection Point_1_Y "
+parameter7.DisplayText = "Connection Point_4_Y "
+parameter8 = Parameters.GetParameter(Name="P29")
+parameter8.DisplayText = "Connection Point_1_Y "
+parameter8.DisplayText = "Connection Point_4_X "
+Save(Overwrite=True)
+parameter9 = Parameters.GetParameter(Name="P30")
+parameter9.DisplayText = "Support structure_Mass"
+Save(Overwrite=True)

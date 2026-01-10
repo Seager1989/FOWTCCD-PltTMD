@@ -1,0 +1,17 @@
+
+ **** MODELLING WARNING **** 29 MODELLING RULE #1 VIOLATIONS IGNORED BY GOON OPTION
+ -----------------------------------------------------------------------------------
+
+ **** INPUT DATA WARNING **** INTERVAL BETWEEN WAVE DIRECTION # 1 AND DIRECTION # 2 FOR STRUCTURE #1 SHOULD NOT BE 
+                              GREATER THAN 90 DEGREES.
+ -------------------------------------------------------------------------------------------------------------------
+
+ **** INPUT DATA WARNING **** INTERVAL BETWEEN WAVE DIRECTION # 2 AND DIRECTION # 3 FOR STRUCTURE #1 SHOULD NOT BE 
+                              GREATER THAN 90 DEGREES.
+ -------------------------------------------------------------------------------------------------------------------
+
+ **** MODELLING WARNING **** 10 MODELLING RULE #2 VIOLATIONS IGNORED BY GOON OPTION
+ -----------------------------------------------------------------------------------
+
+ **** MODELLING WARNING **** COG is not on the vertical line across COB
+ --------------------------------------------------------------------------------

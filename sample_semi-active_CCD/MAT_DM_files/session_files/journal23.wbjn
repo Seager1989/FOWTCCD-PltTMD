@@ -1,0 +1,21 @@
+# encoding: utf-8
+# 2020 R2
+SetScriptVersion(Version="20.2.221")
+system1 = GetSystem(Name="Geom")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit()
+geometry1.Exit()
+designPoint1 = Parameters.GetDesignPoint(Name="0")
+parameter1 = Parameters.GetParameter(Name="P6")
+designPoint1.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="12 [m]")
+geometry1.Edit()
+geometry1.Refresh()
+geometry1.Exit()
+designPoint1.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="15 [m]")
+geometry1.Edit()
+geometry1.Refresh()
+Save(Overwrite=True)

@@ -1,0 +1,77 @@
+# encoding: utf-8
+# 2020 R2
+SetScriptVersion(Version="20.2.221")
+system1 = GetSystem(Name="Geom")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit()
+designPoint1 = Parameters.GetDesignPoint(Name="0")
+parameter1 = Parameters.GetParameter(Name="P3")
+designPoint1.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="18 [m]")
+Update()
+parameter2 = Parameters.GetParameter(Name="P4")
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="-18 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="15.5 [m]")
+designPoint1.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="-15.5 [m]")
+Update()
+geometry1.Exit()
+template1 = GetTemplate(
+    TemplateName="Hydrodynamic Diffraction",
+    Solver="AQWA")
+geometryComponent1 = system1.GetComponent(Name="Geometry")
+system2 = template1.CreateSystem(
+    ComponentsToShare=[geometryComponent1],
+    Position="Right",
+    RelativeTo=system1)
+string1 = geometry1.GetGeometryFileAndSaveData()
+modelComponent1 = system2.GetComponent(Name="Model")
+modelComponent1.Refresh()
+setupComponent1 = system2.GetComponent(Name="Setup")
+setupComponent1.Refresh()
+setup1 = system2.GetContainer(ComponentName="Setup")
+setup1.Edit()
+geometry1.Edit()
+geometry1.Exit()
+string2 = geometry1.GetGeometryFileAndSaveData()
+modelComponent1.Refresh()
+setupComponent1.Refresh()
+setup1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+parameter3 = Parameters.GetParameter(Name="P15")
+parameter3.DisplayText = "radiation_damping46"
+string3 = geometry1.GetGeometryFileAndSaveData()
+setup1.Edit()
+Save(Overwrite=True)
+parameter4 = Parameters.GetParameter(Name="P16")
+parameter4.DisplayText = "add_mass46"
+Save(Overwrite=True)
+geometry1.Edit()
+parameter5 = Parameters.GetParameter(Name="P8")
+designPoint1.SetParameterExpression(
+    Parameter=parameter5,
+    Expression="9 [m]")
+Update()
+designPoint1.SetParameterExpression(
+    Parameter=parameter5,
+    Expression="6 [m]")
+Update()
+string4 = geometry1.GetGeometryFileAndSaveData()
+setup1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+geometry1.Exit()
+Update()
+Save(Overwrite=True)
+Save(Overwrite=True)

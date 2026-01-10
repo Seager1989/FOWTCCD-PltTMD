@@ -1,0 +1,20 @@
+# encoding: utf-8
+# 2020 R2
+SetScriptVersion(Version="20.2.221")
+Save(Overwrite=True)
+system1 = GetSystem(Name="Geom")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+string1 = geometry1.GetGeometryFileAndSaveData()
+system2 = GetSystem(Name="AQW")
+setup1 = system2.GetContainer(ComponentName="Setup")
+setup1.Edit()
+parameter1 = Parameters.GetParameter(Name="P31")
+parameter1.DisplayText = "sub_Ixx"
+parameter2 = Parameters.GetParameter(Name="P32")
+parameter2.DisplayText = "sub_Ixx"
+parameter2.DisplayText = "sub_IYY"
+parameter2.DisplayText = "sub_Iyy"
+parameter3 = Parameters.GetParameter(Name="P33")
+parameter3.DisplayText = "sub_Ixx"
+parameter3.DisplayText = "sub_Izz"
+Save(Overwrite=True)
